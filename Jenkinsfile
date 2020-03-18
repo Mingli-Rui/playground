@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'echo mingli rui's job.'
                 sh 'mvn --version'
             }
         }
