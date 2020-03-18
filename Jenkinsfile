@@ -3,8 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo mingli rui's job.'
-                sh 'mvn --version'
+                sh 'echo "Hello World from mingli rui"'
+                sh '''
+                    echo "Multiline shell steps works too"
+	            pwd
+                    ls -lah
+                '''
             }
         }
     }
